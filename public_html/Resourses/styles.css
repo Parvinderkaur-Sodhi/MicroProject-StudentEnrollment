@@ -1,0 +1,56 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 18-Feb-2023, 9:29:24 pm
+    Author     : Parvinder Kaur Sodhi
+*/
+
+.Head{
+    font-size: 70px;
+    color: #3366ff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+body {
+ background-image: url("images/bgProject2.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+.image{
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+label{
+    font-size: 20px;
+    color: darkslategray;
+}
+
+hr{
+    border-style: inset;
+    border-width: 2px;
+    display: block;
+    color: black;
+}
+
+.form-control{
+    font-size: 18px;
+    font-family: monospace;
+    padding: 1.5%;
+    opacity: 0.8;
+}
+
+form{
+    width: 60%;
+    line-height: 1.8;
+    position: absolute;
+}
+
+.btn{
+    align-items: center;
+    font-size: 20px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html lang="en">
+    <head>
+        <title>FORM</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+        <script src="Resourses/index.js" type="text/javascript"></script>
+        <link href="Resourses/styles.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="Head">STUDENT ENROLLMENT FORM</h2>
+            <hr>
+            <form id="StudentForm" method="post">
+                <div class="form-group">
+                    <span><label for="rollNo">Roll - NO:</label></span>
+                    <input type="number" class="form-control" name="rollNo" id="rollNo"
+                           placeholder="Enter your roll No." required onchange="getStudent()">
+                </div>
+                <div class="form-group">
+                    <label for="name">Student Name:</label>
+                    <input type="text" class="form-control" id="name"
+                           placeholder="Enter full Name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="class">Class:</label>
+                    <input type="number" class="form-control" id="class"
+                           placeholder="Enter Class" name="class">
+                </div>
+                <div class="form-group">
+                    <label for="dob">Birth date:</label>
+                    <input type="date" class="form-control" id="dob" name="dob">
+                </div>
+                <div class="form-group">
+                    <label for="add">Address</label>
+                    <input type="text" class="form-control" id="add"
+                           placeholder="Enter your Address" name="add">
+                </div>
+                <div class="form-group">
+                    <label for="eDate">Enrollment Date:</label>
+                    <input type="date" class="form-control" id="eDate" name="eDate">
+                </div>
+                <br>
+                <div align="center">
+                <input type="button" class="btn btn-primary" id="Save" value="Save" onclick="saveData();">
+                <input type="button" class="btn btn-primary" id="Change" value="Change" onclick="changeData();">
+                <input type="button" class="btn btn-primary" id="Reset" value="Reset" onclick="resetForm();">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
